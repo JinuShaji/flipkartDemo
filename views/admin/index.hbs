@@ -1,0 +1,29 @@
+<div class="container" style="margin-top: 30px;"></div>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col" ></th>
+      <th scope="col">Name</th>
+      <th scope="col">Discription</th>
+        <th scope="col">Price</th>
+      <th scope="col">Image</th>
+    
+    </tr>
+  </thead>
+  <tbody>
+     {{#each product}}
+    <tr>
+      <td scope="row">*</td>
+      <td>{{this.name}}</td>
+      <td>{{this.discription}}</td>
+      <td>{{this.price}}</td>
+      <td><img style="height: 50px; width:50px;" src="/images/product/{{this.image}}" alt=""></td>
+    </tr>
+    {{/each}}
+
+  </tbody>
+</table>
+<a href="/addProducts" class="btn btn-primary">ADD PRODUCT</a>
+
+
+

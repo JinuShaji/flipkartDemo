@@ -1,0 +1,16 @@
+ <div class="container">
+  <div class="row">
+{{#each product}}
+<div class="card" style="width: 19%; margin-left: 10px; margin-top: 5px;"  >
+  <img src="/images/product/{{this.image}}" style="height: 220px;" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{this.name}}</h5>
+    <p class="card-text" style="height: 50px;">{{this.discription}}</p>
+    <h5 class="card-title">{{this.price}}</h5>
+    <a href="/users/addtoCart/{{this.id}}" class="btn btn-primary">Add To Cart</a>
+    <a href="/users/directbuynow/{{this.id}}" style="margin-top: 10px;" class="btn btn-warning">Buy Now</a>
+  </div>
+</div>
+{{/each}}
+  </div>
+  </div>
